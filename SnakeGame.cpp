@@ -16,20 +16,17 @@ int h = size * num_vertBox;    //background number of pixels in height
 //Snake variables to dertermine length and direction 
 int direction;    //direction the snake is moving 
 
-
 /******************MOD3*************************/
 int directionTwo; //direction the snake is moving
 /******************MOD3 END*************************/
 
 int snake_length = 4; //initial size is 4 
 
-
 /******************MOD3*************************/
 int snakeTwo_length = 4; //initial size is 4
 /******************MOD3 END*************************/
 
 int score = 0; //the number of food eaten
-
 
 /******************MOD3*************************/
 int scoreTwo = 0; //number of food eaten by snake two
@@ -43,7 +40,6 @@ struct Snake
 };
 
 Snake s[100];
-
 
 /******************MOD3*************************/
 Snake s2[100];
@@ -296,7 +292,9 @@ int main()
 		if (sf::Keyboard::isKeyPressed(sf::Keyboard::A)) directionTwo = 2;
 		if (sf::Keyboard::isKeyPressed(sf::Keyboard::D)) directionTwo = 3;
 		/******************MOD3 END*************************/
-			/******************MOD2*************************/
+
+
+		/******************MOD2*************************/
 		if (timer > delay)
 		{
 			timer = 0; //reset timer 
