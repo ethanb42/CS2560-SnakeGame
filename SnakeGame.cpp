@@ -302,13 +302,15 @@ int main()
 			move();    //move Snake one sprite forward
 			moveTwo(); //move the second snake one sprite 
 			//both snakes get faster when either one of them eats a fruit
+
+			//IF THE SCORE CHANGES, IT PRINTS BOTH SNAKES SCORES MOD(4)
 			if (temp < score +scoreTwo) {
-				delay = delay - 0.01;;
+				delay = delay - 0.01f;;
 				std::cout << "\nScore 1: " << score << "\nScore 2: " << scoreTwo << std::endl;
 			}
 			else if (temp > score +scoreTwo) {
 				for (int x = temp; temp > (score + scoreTwo); temp--) {
-					delay = delay + 0.01;
+					delay = delay + 0.01f;
 				}
 				std::cout << "\nScore 1: " << score << "\nScore 2: " << scoreTwo << std::endl;
 			}
