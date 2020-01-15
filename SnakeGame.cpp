@@ -49,7 +49,7 @@ Snake s2[100];
 //***NEW*** this is the fruit or food that the snake will eat 
 struct Fruit
 {
-	int x, y;    // only need one sprite needed for one food item 
+	int x, y;    // only one sprite needed for one food item 
 
 }food;
 
